@@ -1,7 +1,9 @@
 from GestoreCalcoli import *
 if __name__ == '__main__':
 	c=GestoreCalcoli()
-	print(f'La somma vale:{c.add(2,3)}')
-	print(f'La sottrazione vale: {c.sub(2,3)}')
-	print(f'La moltiplicazione vale: {c.mul(2,3)}')
-	print(f'La divisione vale: {c.div(2,3)}')
+	x=int(input('Inserire il primo numero: '))
+	y=int(input('Inserire il secondo numero: '))
+	print(f'La somma vale:{c.add(x,y)}')
+	print(f'La sottrazione vale: {c.sub(x,y)}')
+	print(f'La moltiplicazione vale: {c.mul(x,y)}')
+	print(f'La divisione vale: {c.div(x,y)}')
