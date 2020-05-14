@@ -36,7 +36,7 @@ def getInterval(dates):
         if response.status_code!=200:
             return "Errore nella comunicazione con il server"
         else:
-            return json.load(response.content)
+            return json.loads(response.content)
     except Exception as e:
         print(e)
         traceback.print_stack()
