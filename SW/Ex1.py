@@ -1,8 +1,9 @@
 import cherrypy
 import json
 
-@cherrypy.expose
+
 class ConvertsTemp():
+    exposed=True
     def GET(self,*uri,**params):#cos'è l'asterisco singolo e doppio
         output={}
         #controllo i parametri
@@ -49,6 +50,6 @@ if __name__ == '__main__':
         }
     }
 
-    cherrypy.tree.mount(ConvertsTemp(), "/", conf)
+    cherrypy.tree.mount(ConvertsTemp(), "/converter", conf)
     cherrypy.engine.start()
     cherrypy.engine.block()

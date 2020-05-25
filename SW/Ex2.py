@@ -50,6 +50,6 @@ if __name__ == '__main__':
         }
     }
 
-    cherrypy.tree.mount(ConvertsTemp(), "/", conf)
+    cherrypy.tree.mount(ConvertsTemp(), "/converter", conf)
     cherrypy.engine.start()
     cherrypy.engine.block()
